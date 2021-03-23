@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-23T10:21:40.008Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="3c7jsQpFGgdTJqbuJ6Sm" version="14.5.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-23T10:34:56.313Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="lzWU41NmGx8EK7ZezBVD" version="14.5.0" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">
     <mxGraphModel dx="1422" dy="766" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -318,7 +318,7 @@
         <mxCell id="8dAeOOXVESq5FxeyXLk6-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;startArrow=none;startFill=0;" edge="1" parent="1" source="8dAeOOXVESq5FxeyXLk6-21" target="8dAeOOXVESq5FxeyXLk6-40">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="8dAeOOXVESq5FxeyXLk6-21" value="&lt;span&gt;Repeat for every &lt;br&gt;word in token :&lt;/span&gt;&lt;br&gt;&lt;span&gt;Exclude Stop words and punctuation and stem the word&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;gradientColor=#ffffff;fontSize=12;align=center;" vertex="1" parent="1">
+        <mxCell id="8dAeOOXVESq5FxeyXLk6-21" value="&lt;span&gt;&lt;b&gt;For each word in Token::&lt;/b&gt;&lt;br&gt;Exclude Stop words and punctuation and stem the word from token , &lt;br&gt;perform Step (a)-(d)&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;gradientColor=#ffffff;fontSize=12;align=center;" vertex="1" parent="1">
           <mxGeometry x="45.400000000000006" y="1870" width="142.69" height="90" as="geometry" />
         </mxCell>
         <mxCell id="8dAeOOXVESq5FxeyXLk6-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="8dAeOOXVESq5FxeyXLk6-36" target="8dAeOOXVESq5FxeyXLk6-15">
@@ -337,7 +337,7 @@
           <mxGeometry x="258" y="1640" width="100" height="100" as="geometry" />
         </mxCell>
         <mxCell id="8dAeOOXVESq5FxeyXLk6-43" value="Store the word in NOT_FOUND List" style="rounded=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
-          <mxGeometry x="248" y="1810" width="120" height="60" as="geometry" />
+          <mxGeometry x="248" y="1801.87" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="8dAeOOXVESq5FxeyXLk6-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;labelBackgroundColor=#99FF33;startArrow=none;startFill=0;" edge="1" parent="1" source="8dAeOOXVESq5FxeyXLk6-47" target="8dAeOOXVESq5FxeyXLk6-49">
           <mxGeometry relative="1" as="geometry" />
@@ -351,8 +351,38 @@
         <mxCell id="8dAeOOXVESq5FxeyXLk6-49" value="Sum up all the document score for a given Doc_Id and store relevance score in list" style="rounded=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
           <mxGeometry x="460" y="1740" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="8dAeOOXVESq5FxeyXLk6-51" value="Return list of relevance score for all the documents&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
-          <mxGeometry x="460" y="1850" width="120" height="60" as="geometry" />
+        <mxCell id="8dAeOOXVESq5FxeyXLk6-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;labelBackgroundColor=#99FF33;startArrow=none;startFill=0;" edge="1" parent="1" source="8dAeOOXVESq5FxeyXLk6-51" target="8dAeOOXVESq5FxeyXLk6-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8dAeOOXVESq5FxeyXLk6-51" value="Return list of relevance score for all the documents and NOT_FOUND List&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="455" y="1880" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="8dAeOOXVESq5FxeyXLk6-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;labelBackgroundColor=#99FF33;startArrow=none;startFill=0;" edge="1" parent="1" source="8dAeOOXVESq5FxeyXLk6-53" target="8dAeOOXVESq5FxeyXLk6-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8dAeOOXVESq5FxeyXLk6-53" value="Sort the relevance in descending order" style="rounded=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="650" y="1630" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8dAeOOXVESq5FxeyXLk6-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;labelBackgroundColor=#99FF33;startArrow=none;startFill=0;" edge="1" parent="1" source="8dAeOOXVESq5FxeyXLk6-57" target="8dAeOOXVESq5FxeyXLk6-61">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8dAeOOXVESq5FxeyXLk6-57" value="&lt;span&gt;Pull all the information associated with Doc_Id&amp;nbsp;&lt;br&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="650" y="1730" width="120" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="8dAeOOXVESq5FxeyXLk6-61" value="&lt;span&gt;User Interface&lt;/span&gt;&lt;br&gt;&lt;span&gt;to display Results&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="650" y="1885" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8dAeOOXVESq5FxeyXLk6-67" value="a" style="text;html=1;strokeColor=#6F0000;fillColor=#a20025;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="258" y="1640" width="25" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="8dAeOOXVESq5FxeyXLk6-68" value="d" style="text;html=1;strokeColor=#6F0000;fillColor=#a20025;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="430" y="1750" width="25" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="8dAeOOXVESq5FxeyXLk6-69" value="b" style="text;html=1;strokeColor=#6F0000;fillColor=#a20025;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="258" y="1780" width="25" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="8dAeOOXVESq5FxeyXLk6-70" value="c" style="text;html=1;strokeColor=#6F0000;fillColor=#a20025;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="433" y="1630" width="25" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
