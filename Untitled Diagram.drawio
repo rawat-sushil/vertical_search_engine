@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-22T23:57:23.471Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="ariC2lvuVF3_JdbcjY9K" version="14.5.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-23T00:01:35.018Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="WdOgoue-39srgy4CaAAk" version="14.5.0" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">
     <mxGraphModel dx="1422" dy="766" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -219,14 +219,27 @@
         <mxCell id="W53FJTdG9QXFK-XVxgLC-47" value="combine profile name, paper title, co-authors and year published and store in dataframe" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;gradientColor=#ffffff;fontSize=12;align=center;" vertex="1" parent="1">
           <mxGeometry x="63.75" y="1160" width="136.25" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="W53FJTdG9QXFK-XVxgLC-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;labelBackgroundColor=#99FF33;fontSize=12;" edge="1" parent="1" source="W53FJTdG9QXFK-XVxgLC-59" target="W53FJTdG9QXFK-XVxgLC-62">
+        <mxCell id="W53FJTdG9QXFK-XVxgLC-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;labelBackgroundColor=#99FF33;fontSize=12;" edge="1" parent="1" source="W53FJTdG9QXFK-XVxgLC-59" target="W53FJTdG9QXFK-XVxgLC-64">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="W53FJTdG9QXFK-XVxgLC-59" value="&lt;ol style=&quot;font-size: 12px&quot;&gt;&lt;li style=&quot;font-size: 12px&quot;&gt;&lt;span style=&quot;font-size: 12px&quot;&gt;Create an empty index { Word: (Doc_Id, Freq) }&lt;/span&gt;&lt;/li&gt;&lt;li style=&quot;font-size: 12px&quot;&gt;&lt;span style=&quot;font-size: 12px&quot;&gt;Parse each row of data in the dataframe&lt;/span&gt;&lt;br style=&quot;font-size: 12px&quot;&gt;&lt;/li&gt;&lt;li style=&quot;font-size: 12px&quot;&gt;Tokenize the data&lt;/li&gt;&lt;li style=&quot;font-size: 12px&quot;&gt;Parse every word in token and exclude stop words and punctuations&lt;/li&gt;&lt;li style=&quot;font-size: 12px&quot;&gt;Stem the word&lt;/li&gt;&lt;li style=&quot;font-size: 12px&quot;&gt;if word is not already in dictionary, add a new entry and add Doc_Id and frequency of word else only increment the frequency of word&lt;/li&gt;&lt;li style=&quot;font-size: 12px&quot;&gt;Repeat step 2-7 until all rows are parsed&lt;/li&gt;&lt;/ol&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=0;strokeWidth=2;align=left;fontSize=12;" vertex="1" parent="1">
           <mxGeometry x="225" y="1180" width="345" height="180" as="geometry" />
         </mxCell>
-        <mxCell id="W53FJTdG9QXFK-XVxgLC-62" value="If Inverted Index &lt;br&gt;created successfully,&lt;br&gt;&amp;nbsp;Set Flag for first &lt;br style=&quot;font-size: 12px&quot;&gt;time index creation &lt;br&gt;to False" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;fontSize=12;align=center;" vertex="1" parent="1">
-          <mxGeometry x="620" y="1210" width="200" height="110" as="geometry" />
+        <mxCell id="W53FJTdG9QXFK-XVxgLC-67" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;labelBackgroundColor=#99FF33;fontSize=12;" edge="1" parent="1" source="W53FJTdG9QXFK-XVxgLC-64" target="W53FJTdG9QXFK-XVxgLC-66">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="W53FJTdG9QXFK-XVxgLC-68" value="NO" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;labelBackgroundColor=#FF8000;fontSize=12;" edge="1" parent="1" source="W53FJTdG9QXFK-XVxgLC-64" target="W53FJTdG9QXFK-XVxgLC-17">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="650" y="1115" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="W53FJTdG9QXFK-XVxgLC-64" value="&amp;nbsp;Index Creation Success?" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="600" y="1220" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="W53FJTdG9QXFK-XVxgLC-66" value="Set First time index creation Flag to FALSE" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="741.75" y="1240" width="85.5" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
