@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-23T00:13:12.534Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="WbOLOR50u_bIDGhPurOU" version="14.5.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-23T00:14:55.052Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="T6jRXWyT9XsWiu4T0mwH" version="14.5.0" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">
     <mxGraphModel dx="1422" dy="766" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -262,7 +262,7 @@
         <mxCell id="W53FJTdG9QXFK-XVxgLC-74" value="&amp;nbsp;No Action needed" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;fontSize=12;align=center;" vertex="1" parent="1">
           <mxGeometry x="385" y="1060" width="70" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="W53FJTdG9QXFK-XVxgLC-76" value="1. Read all the rows one by one from dataframe which are changed since last crawl.&lt;br&gt;2. Tokenize the row data and exclude stop words and punctuations&lt;br&gt;3.Stem the word&lt;br&gt;4. find the word in the existing index and update its freq.&lt;br&gt;5. Repeat until all rows are parsed" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;align=left;" vertex="1" parent="1">
+        <mxCell id="W53FJTdG9QXFK-XVxgLC-76" value="1. Read all the rows one by one from dataframe which are changed since last crawl.&lt;br&gt;2. Tokenize the row data and exclude stop words and punctuations&lt;br&gt;3.Stem the word&lt;br&gt;4. Find the word in the existing index and update its freq else add a new entry in the index&lt;br&gt;5. Repeat until all rows are parsed" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;align=left;" vertex="1" parent="1">
           <mxGeometry x="510" y="949" width="320" height="121" as="geometry" />
         </mxCell>
       </root>
