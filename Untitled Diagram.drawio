@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-23T10:05:40.435Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="bnp4bLDcWikUmAVPV2Mn" version="14.5.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-23T10:21:40.008Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="3c7jsQpFGgdTJqbuJ6Sm" version="14.5.0" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">
     <mxGraphModel dx="1422" dy="766" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -266,7 +266,7 @@
           <mxGeometry x="510" y="949" width="320" height="121" as="geometry" />
         </mxCell>
         <mxCell id="8dAeOOXVESq5FxeyXLk6-1" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;align=center;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="38" y="1614.87" width="795" height="430" as="geometry" />
+          <mxGeometry x="38" y="1614.87" width="795" height="375.13" as="geometry" />
         </mxCell>
         <mxCell id="8dAeOOXVESq5FxeyXLk6-2" value="User Interface" style="shape=umlFrame;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;gradientColor=#ffffff;swimlaneFillColor=#E6FFCC;" vertex="1" parent="1">
           <mxGeometry x="713" y="1487.37" width="120" height="80" as="geometry" />
@@ -309,20 +309,50 @@
         <mxCell id="8dAeOOXVESq5FxeyXLk6-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;labelBackgroundColor=#99FF33;" edge="1" parent="1" source="8dAeOOXVESq5FxeyXLk6-15" target="8dAeOOXVESq5FxeyXLk6-21">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="8dAeOOXVESq5FxeyXLk6-15" value="Read csv file containing all the papers information" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;gradientColor=#ffffff;fontSize=12;align=center;" vertex="1" parent="1">
-          <mxGeometry x="56" y="1761.87" width="120" height="50" as="geometry" />
+        <mxCell id="8dAeOOXVESq5FxeyXLk6-15" value="Tokenize the query into token" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;gradientColor=#ffffff;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="56.75" y="1740" width="120" height="61.87" as="geometry" />
         </mxCell>
         <mxCell id="8dAeOOXVESq5FxeyXLk6-16" value="User" style="outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#232F3E;fillColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.user;" vertex="1" parent="1">
           <mxGeometry x="783" y="1516.37" width="49" height="49" as="geometry" />
         </mxCell>
-        <mxCell id="8dAeOOXVESq5FxeyXLk6-21" value="combine profile name, paper title, co-authors and year published and store in dataframe" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;gradientColor=#ffffff;fontSize=12;align=center;" vertex="1" parent="1">
-          <mxGeometry x="56.75" y="1831.87" width="136.25" height="70" as="geometry" />
+        <mxCell id="8dAeOOXVESq5FxeyXLk6-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;startArrow=none;startFill=0;" edge="1" parent="1" source="8dAeOOXVESq5FxeyXLk6-21" target="8dAeOOXVESq5FxeyXLk6-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8dAeOOXVESq5FxeyXLk6-21" value="&lt;span&gt;Repeat for every &lt;br&gt;word in token :&lt;/span&gt;&lt;br&gt;&lt;span&gt;Exclude Stop words and punctuation and stem the word&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;gradientColor=#ffffff;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="45.400000000000006" y="1870" width="142.69" height="90" as="geometry" />
         </mxCell>
         <mxCell id="8dAeOOXVESq5FxeyXLk6-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="8dAeOOXVESq5FxeyXLk6-36" target="8dAeOOXVESq5FxeyXLk6-15">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="8dAeOOXVESq5FxeyXLk6-36" value="" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="8dAeOOXVESq5FxeyXLk6-36" value="Input Query to process" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="56.75" y="1630" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="8dAeOOXVESq5FxeyXLk6-44" value="NO" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;startArrow=none;startFill=0;labelBackgroundColor=#FFB570;" edge="1" parent="1" source="8dAeOOXVESq5FxeyXLk6-40" target="8dAeOOXVESq5FxeyXLk6-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8dAeOOXVESq5FxeyXLk6-48" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;labelBackgroundColor=#99FF33;startArrow=none;startFill=0;" edge="1" parent="1" source="8dAeOOXVESq5FxeyXLk6-40" target="8dAeOOXVESq5FxeyXLk6-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8dAeOOXVESq5FxeyXLk6-40" value="Is word in &lt;br&gt;index?" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;align=center;" vertex="1" parent="1">
+          <mxGeometry x="258" y="1640" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="8dAeOOXVESq5FxeyXLk6-43" value="Store the word in NOT_FOUND List" style="rounded=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="248" y="1810" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8dAeOOXVESq5FxeyXLk6-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;labelBackgroundColor=#99FF33;startArrow=none;startFill=0;" edge="1" parent="1" source="8dAeOOXVESq5FxeyXLk6-47" target="8dAeOOXVESq5FxeyXLk6-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8dAeOOXVESq5FxeyXLk6-47" value="Calculate the document score&lt;br&gt;&lt;b&gt;(TF *IDF)&lt;/b&gt; for each Doc_Id found for word" style="rounded=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="460" y="1630" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="8dAeOOXVESq5FxeyXLk6-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;labelBackgroundColor=#99FF33;startArrow=none;startFill=0;" edge="1" parent="1" source="8dAeOOXVESq5FxeyXLk6-49" target="8dAeOOXVESq5FxeyXLk6-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8dAeOOXVESq5FxeyXLk6-49" value="Sum up all the document score for a given Doc_Id and store relevance score in list" style="rounded=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="460" y="1740" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="8dAeOOXVESq5FxeyXLk6-51" value="Return list of relevance score for all the documents&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="460" y="1850" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
