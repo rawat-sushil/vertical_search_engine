@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-23T00:01:35.018Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="WdOgoue-39srgy4CaAAk" version="14.5.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-23T00:11:45.825Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="LH4A8F831qGU5mpiwdjo" version="14.5.0" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">
     <mxGraphModel dx="1422" dy="766" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -204,6 +204,9 @@
         <mxCell id="W53FJTdG9QXFK-XVxgLC-46" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;labelBackgroundColor=#99FF33;" edge="1" parent="1" source="W53FJTdG9QXFK-XVxgLC-44" target="W53FJTdG9QXFK-XVxgLC-17">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="W53FJTdG9QXFK-XVxgLC-71" value="NO" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;labelBackgroundColor=#FF8000;fontSize=12;" edge="1" parent="1" source="W53FJTdG9QXFK-XVxgLC-44" target="W53FJTdG9QXFK-XVxgLC-70">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="W53FJTdG9QXFK-XVxgLC-44" value="first time&lt;br&gt;&amp;nbsp;Index &lt;br&gt;creation?" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="67.5" y="949" width="112.5" height="101" as="geometry" />
         </mxCell>
@@ -240,6 +243,27 @@
         </mxCell>
         <mxCell id="W53FJTdG9QXFK-XVxgLC-66" value="Set First time index creation Flag to FALSE" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;align=center;" vertex="1" parent="1">
           <mxGeometry x="741.75" y="1240" width="85.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="W53FJTdG9QXFK-XVxgLC-73" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;labelBackgroundColor=#FF8000;fontSize=12;" edge="1" parent="1" source="W53FJTdG9QXFK-XVxgLC-70" target="W53FJTdG9QXFK-XVxgLC-72">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="W53FJTdG9QXFK-XVxgLC-70" value="&lt;div&gt;&lt;span&gt;Read the last and latest csv file containing all the paper&#39;s information and store in dataframe&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="230" y="960" width="120" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="W53FJTdG9QXFK-XVxgLC-75" value="NO" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;labelBackgroundColor=#FF8000;fontSize=12;" edge="1" parent="1" source="W53FJTdG9QXFK-XVxgLC-72" target="W53FJTdG9QXFK-XVxgLC-74">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="W53FJTdG9QXFK-XVxgLC-77" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;labelBackgroundColor=#80FF00;fontSize=12;" edge="1" parent="1" source="W53FJTdG9QXFK-XVxgLC-72" target="W53FJTdG9QXFK-XVxgLC-76">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="W53FJTdG9QXFK-XVxgLC-72" value="Difference found?" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="380" y="960" width="80" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="W53FJTdG9QXFK-XVxgLC-74" value="&amp;nbsp;No Action needed" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="385" y="1060" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="W53FJTdG9QXFK-XVxgLC-76" value="1. Read all the rows one by one from dataframe which are changed since last crawl.&lt;br&gt;2. Tokenize the row data and exclude stop words and punctuations&lt;br&gt;3.Stem the word&lt;br&gt;4. find the word in the existing index and update its freq.&lt;br&gt;5. Repeat until all rows are parsed" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;align=left;" vertex="1" parent="1">
+          <mxGeometry x="510" y="949" width="320" height="121" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
