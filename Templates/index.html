@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Coventry University Scholar Search Engine </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <style>
+      .container {
+        max-width: 1000px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4"> 
+              <h1>Vertical Search Engine</h1>
+              <form role="form" method='POST' action='/'>
+                <div class="form-group">
+                  <input type="text" name="query_form" class="form-control" id="query-box" placeholder="Enter Search Query..." style="max-width: 500px;" autofocus required>
+                </div>
+                <button type="submit" name ="search" value = "search" class="btn btn-default">Search</button>
+                <button type="submit" name ="search" value = "classify" class="btn btn-default">Classify Subject</button>
+              </form>
+              <br>
+              <br>
+               <div class="row">
+                 <div class="col-2 text-truncate">
+                    <B>
+                   <p class="text-sm-left"> This vertical search engine is created for coursework:CEM7071 2020-2021</p>
+                   <p class="text-sm-left"> Created By : Sushil Dutt Rawat </p>
+                   <p class="text-sm-left"> Email id: rawats4@coventry.ac.uk </p>
+                    </B>
+                 </div>
+               </div>
+              {% for error in errors %}
+                <h4>{{ error }}</h4>
+              {% endfor %}
+            </div> 
+            <div class="col-sm-8"> 
+              {% if subject %}
+                <h2> Subject Classification </h2>
+                <h5> Available Categories: "Business" ,"Entertainment","Politics","Sport","Tech" </h5>
+                <br>
+                <h4> <B>Input Text:</B> <var> {{query}} </var></h4> <br>
+                <h3> <B>Result: </B>{{ subject[0] }} </h3>
+                <h3> <B>Confidence Score: </B>{{ subject[1] }} % </h3>
+                
+              {% endif %}  
+              {% if results %}
+                <h2>Search Results</h2>
+                <p> Found <var><b>{{stats[0]}}</b></var> documents in <var><b>{{stats[1]}}</b></var> seconds for query <B><var>{{query}}</var></B></p>
+                {% if not_found %} <p> No match found for : <var style="color:#FF0000";>{{not_found}}</var></p> {% endif %}
+                <br>
+                <div id="results">
+                  <table class="table table-hover" style="max-width: 1200px;">
+                    <thead>
+                      <tr>
+                        <th>Relevance_Score</th>
+                        <th>Profile_Name</th>
+                        <th>Title</th>
+                        <th>All_Authors</th>
+                        <th>Year_Published</th>
+                        <th>Citations </th>
+                      </tr>
+                    </thead>
+                    {% for key, result in results.items()%}
+                      <tr>
+                        <td>{{ result[0]}}</td>
+                        <td>{{ result[3]}}</td>  
+                        <td><a href = {{ result[2]}} target="_blank" rel="noopener noreferrer">{{ result[1]}}</a></td>
+                        <td>{{ result[4]}}</td>
+                        <td>{{ result[5]}}</td>
+                        <td>{{ result[6]}}</td>
+                      </tr>
+                    {% endfor %}
+                  </table>
+                </div>
+              {% else %}
+                  {% if virgin_boot %}
+                  <h2>No Matching Search Results</h2>
+                    <p> No match found for : <var style="color:#FF0000";>{{not_found}}</var></p>
+                  {% endif %}
+              {% endif %}
+            </div>
+        </div> 
+    </div>
+    <script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </body>
+</html>
