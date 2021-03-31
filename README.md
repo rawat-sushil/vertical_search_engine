@@ -12,8 +12,9 @@ Crawler Output:
 2.CoventryUni_Data_Scraped_articles.csv - Contains all the publication information   
  
 Folder:   
-Templates - Contain index.html which is rendered for UI
+Templates - Contain index.html which is rendered for UI   
  
+User Interface:   
 
 ![image](https://user-images.githubusercontent.com/73084282/113184296-e7db2280-924c-11eb-9e26-1ec690415ab2.png)
 ![image](https://user-images.githubusercontent.com/73084282/113184324-ef9ac700-924c-11eb-8220-bc70b56a6118.png)
