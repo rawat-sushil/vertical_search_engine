@@ -2,7 +2,7 @@
 
 File Names:
 1. CoventryUni_main_20March.ipynb - Main file which integrate both search engine and subject classifier and also builds UI
-2.TextClassification.ipynb - Contains code to build and train subject classifier model
+2. TextClassification.ipynb - Contains code to build and train subject classifier model
 3. Crawler.ipynb - Contains code to crawl the google scholar website
 
 Crawler Output:
